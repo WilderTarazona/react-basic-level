@@ -27,6 +27,10 @@ const Products = () => {
     navigate("../cart");
   };
 
+  const goMyOrders = () => {
+    navigate("../my-orders");
+  };
+
   return (
     <form>
       <div style={{ marginBottom: "10px" }}>Seleccione los Productos a comprar:</div>
@@ -83,6 +87,15 @@ const Products = () => {
           onClick={goShoppingCart}
         >
           Ir al carrito
+        </Button>
+
+        <Button
+          type="button"
+          variant="contained"
+          color="primary"
+          onClick={goMyOrders}
+        >
+          Mis ordenes
         </Button>
       </Box>
       

@@ -2,7 +2,7 @@ import { useNavigate } from "react-router-dom";
 import { useDispatch } from "react-redux";
 import { useEffect } from "react";
 
-import { Box, Button, FormLabel } from "@mui/material";
+import { Box, Button } from "@mui/material";
 
 import ListItem from "@mui/material/ListItem";
 import IconButton from "@mui/material/IconButton";
@@ -13,6 +13,7 @@ import RemoveCircleOutlineIcon from "@mui/icons-material/RemoveCircleOutline";
 
 import useShoppingCart from "../../../core/store/shopping-cart/useShoppingCart";
 import ShoppingCartActions from "../../../core/store/shopping-cart/actions";
+import ShoppingCartHttp from "../http/shopping-cart-http";
 
 const Cart = () => {
   const dispatch = useDispatch();
@@ -41,6 +42,20 @@ const Cart = () => {
     console.log("removiendo");
     dispatch(ShoppingCartActions.removeCart([id]));
   };
+
+  const saveOrder = () => {
+    console.log("guardando");
+    const random = Math.random()*16|0;
+    const newOrder = {
+      id: random,
+      number: `RPE0029439${random}`,
+      createdDate: new Date(),
+      products: cart
+    };
+    ShoppingCartHttp.postOrder(newOrder).then((res) => {
+      navigate("../my-orders");
+    });
+  }
 
   return (
     <Box>
@@ -95,7 +110,7 @@ const Cart = () => {
           <Button type="button" variant="outlined" onClick={goBack}>
             Agregar productos
           </Button>
-          <Button type="submit" variant="contained" color="success">
+          <Button type="button" variant="contained" color="success" onClick={saveOrder}>
             Comprar
           </Button>
         </Box>

@@ -4,6 +4,7 @@ import { Routes, Route, Navigate } from "react-router-dom";
 import ShoppingCartLayout from "./Layout/Layout";
 import Products from "./pages/Products";
 import Cart from "./pages/Cart";
+import MyOrders from "./pages/MyOrders";
 
 const Protected = ({ children }) => {
   // const { step1 } = useSelector((state) => state.purchase);
@@ -28,6 +29,7 @@ const ShoppingCartRouter = () => {
             </Protected>
           }
         ></Route>
+        <Route path="my-orders" element={<MyOrders />}></Route>
       </Route>
     </Routes>
   );
