@@ -1,0 +1,28 @@
+{
+  "product": [
+    { "id": 1, "name": "Cuchillas en ángulo recto para plástico BMS AML-AMR" },
+    { "id": 2, "name": "Cuchillas acodadas para plástico BMS AH" },
+    { "id": 3, "name": "Cuchillas planas para plástico BMS PF" },
+    { "id": 4, "name": "Cuchillas rectas largas para plástico BMS AJL" },
+    { "id": 5, "name": "Cuchillas rectas para plástico BMS AJ" },
+    { "id": 6, "name": "Andamio Altrex Scafline Eco" },
+    { "id": 7, "name": "Andamio Altrex Scafline Tirantes" },
+    { "id": 8, "name": "Andamio plegable Altrex RS 44-Power" },
+    { "id": 9, "name": "Andamio plegable Altrex RS Tower 34" },
+    { "id": 10, "name": "Andamio Altrex RS Tower 42" },
+    { "id": 11, "name": "Escalera de tijera de madera Svelt S7" },
+    { "id": 12, "name": "Escalera de madera extensible de 2 tramos Svelt S2" },
+    { "id": 13, "name": "Adaptadores a bridas Swagelok" },
+    { "id": 14, "name": "Sistema de apriete Genebre RAC-GE" },
+    { "id": 15, "name": "Bata Cofra Esd Electrostatic" },
+    { "id": 16, "name": "Bata quirúrgica Cofra Saniwear Medicshape" },
+    { "id": 17, "name": "Sistema de extracción de grasas en frío" },
+    { "id": 18, "name": "Sistema de extracción de grasas" },
+    { "id": 19, "name": "Aspirador de polvo y lodos Husqvarna S26" },
+    { "id": 20, "name": "Aspiradores de lodo de alto rendimiento Husqvarna Linea-W" },
+    { "id": 21, "name": "Purificador de aire portátil Husqvarna Linea-A" },
+    { "id": 22, "name": "Picos Redondo" },
+    { "id": 23, "name": "Tijeras de corte Illbruck AB005" }
+  ],
+  "shoppingcart": []
+}
